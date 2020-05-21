@@ -15,8 +15,12 @@ export default {
 
   computed: {
     stamps () {
-      return []
+      return this.$store.getters['stamps/all']
     }
+  },
+
+  created () {
+    this.$store.dispatch('stamps/fetchAll')
   }
 
 }

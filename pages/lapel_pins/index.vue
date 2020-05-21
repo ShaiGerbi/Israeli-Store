@@ -15,8 +15,12 @@ export default {
 
   computed: {
     lapel_pins () {
-      return []
+      return this.$store.getters['lapel_pins/all']
     }
+  },
+
+  created () {
+    this.$store.dispatch('lapel_pins/fetchAll')
   }
 
 }

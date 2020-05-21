@@ -15,8 +15,12 @@ export default {
 
   computed: {
     tokens () {
-      return []
+      return this.$store.getters['tokens/all']
     }
+  },
+
+  created () {
+    this.$store.dispatch('tokens/fetchAll')
   }
 
 }

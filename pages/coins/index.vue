@@ -15,8 +15,12 @@ export default {
 
   computed: {
     coins () {
-      return []
+      return this.$store.getters['coins/all']
     }
+  },
+
+  created () {
+    this.$store.dispatch('coins/fetchAll')
   }
 
 }
