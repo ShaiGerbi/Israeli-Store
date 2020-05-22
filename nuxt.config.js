@@ -52,6 +52,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: 'https://israeli-store.netlify.app/db'
   },
   /*
   ** vuetify module configuration
