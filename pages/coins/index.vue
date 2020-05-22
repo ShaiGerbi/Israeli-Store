@@ -7,7 +7,7 @@ import Products from '@/components/Products'
 
 export default {
 
-  name: 'CoinIndex',
+  name: 'CoinsIndex',
 
   components: {
     Products
